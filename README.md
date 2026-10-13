@@ -1,2 +1,2 @@
-# my-college-site
-Сайт коледжу
+# my-horse-site
+Кінний спорт
