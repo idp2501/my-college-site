@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запис на заняття з кінного спорту</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Кінний спорт</h1>
+    <p class="subtitle">Запишіться на заняття та відкрийте для себе світ коней!</p>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Особисті дані</legend>
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="name">Ім'я та прізвище:</label>
+                    <input type="text" id="name" name="name"
+                           placeholder="Введіть ваше ім'я" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Електронна пошта:</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="example@gmail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Номер телефону:</label>
+                    <input type="tel" id="phone" name="phone"
+                           placeholder="+380XXXXXXXXX" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="birthdate">Дата народження:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Інформація про заняття</legend>
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="level">Ваш рівень підготовки:</label>
+                    <select id="level" name="level" required>
+                        <option value="">Оберіть рівень</option>
+                        <option value="beginner">Початківець</option>
+                        <option value="intermediate">Середній</option>
+                        <option value="advanced">Досвідчений вершник</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Бажана дата заняття:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+            </div>
+
+            <p class="question">Який напрям вас цікавить?</p>
+
+            <div class="options">
+                <label>
+                    <input type="radio" name="sport" value="riding" required>
+                    Верхова їзда
+                </label>
+
+                <label>
+                    <input type="radio" name="sport" value="jumping">
+                    Конкур
+                </label>
+
+                <label>
+                    <input type="radio" name="sport" value="dressage">
+                    Виїздка
+                </label>
+            </div>
+
+            <p class="question">Що вас цікавить додатково?</p>
+
+            <div class="options">
+                <label>
+                    <input type="checkbox" name="interest" value="care">
+                    Догляд за кіньми
+                </label>
+
+                <label>
+                    <input type="checkbox" name="interest" value="equipment">
+                    Екіпірування вершника
+                </label>
+            </div>
+
+            <div class="form-group message">
+                <label for="comment">Додаткова інформація:</label>
+                <textarea id="comment" name="comment" rows="4"
+                          placeholder="Розкажіть про свій досвід або побажання"></textarea>
+            </div>
+        </fieldset>
+
+        <div class="agreement">
+            <label>
+                <input type="checkbox" name="agreement" required>
+                Я погоджуюся на обробку наданих даних.
+            </label>
+        </div>
+
+        <div class="buttons">
+            <button type="submit">Надіслати заявку</button>
+            <button type="reset" class="reset-button">Очистити форму</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
